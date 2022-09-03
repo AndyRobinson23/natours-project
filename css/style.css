@@ -121,6 +121,7 @@ body {
     border-radius: 20rem;
     display: inline-block;
     transition: all 0.2s;
+    position: relative;
 }
 
 .btn:hover {
@@ -136,4 +137,27 @@ body {
 .btn-white {
     background-color: #fff;
     color: #777;
+}
+
+.btn::after {
+    /* When using pseudo-elements like this you need to specify a content (usually an empty string) and a display property in order for it to show */
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 20rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+}
+
+.btn-white::after {
+    background-color: #fff;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
 }
