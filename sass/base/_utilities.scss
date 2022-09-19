@@ -5,6 +5,9 @@
 .u-margin-bottom-medium { margin-bottom: 4rem; }
 .u-margin-bottom-big { margin-bottom: 8rem; }
 
+.u-margin-top-big { margin-top: 8rem; }
+.u-margin-top-huge { margin-top: 10rem; }
+
 .u-width-75 { width: 75%; }
 
 .u-div-center { margin: 0 auto; }
@@ -14,6 +17,11 @@
 .grid-2-col {
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .grid-4-col {
