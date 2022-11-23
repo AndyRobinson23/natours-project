@@ -29,7 +29,14 @@
     grid-template-columns: repeat(4, 1fr);
 }
 
-// Grid gap values
+// -- FLEXBOX --
+
+.flex-container--column {
+    display: grid;
+    flex-direction: column;
+}
+
+// -- GAP VALUES --
 .gap-2 {
     gap: 2rem;
 }
